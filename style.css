@@ -1,0 +1,102 @@
+/* Estilos gerais */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #00161C;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.75rem 0;
+}
+
+.titulo__cabecalho {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Conteúdo Principal */
+main {
+    background-color: #DFE3E5;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Seção do Conversor */
+.conversor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.painel__conversor {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: solid 0.175rem #00161C;
+    border-radius: 30px;
+    background-color: #00161C;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.titulo__conversor {
+    margin: 0;
+    margin-bottom: 0.8rem;
+    font-size: 1.2em;
+}
+
+.input__conversor {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.botao__conversor {
+    background-color: #4F4C4C;
+    margin-top: 1rem;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.botao__conversor:hover {
+    background-color: #333333;
+}
+
+/* Responsividade para telas menores (celulares) */
+@media screen and (max-width: 768px) {
+    .titulo__cabecalho {
+        font-size: 1.2em;
+    }
+
+    .titulo__conversor {
+        font-size: 1em;
+    }
+
+    .input__conversor,
+    .botao__conversor {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}
